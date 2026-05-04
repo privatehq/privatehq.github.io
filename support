@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MindBridge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+            <ul class="nav nav-pills justify-content-center mt-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="/" style="color:black; font-weight: 500;">MindBridge</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/resources">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/support">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        
+            <div class="text-center mt-5 p-4 p-md-5 bg-primary rounded" id="banner">
+            <h1 class="text-center mt-5" style="font-size: clamp(2.5rem, 8vw, 75px);">MindBridge Support</h1>
+            <p class="text-center mt-3 text-primary" style="font-size: clamp(1rem, 3vw, 1.25rem);">Your one-stop solution for mental health resources and support.</p>
+            </div>
+            <section class="mt-5 px-3 px-md-0">
+                <div style="max-width: 600px; margin: 0 auto;">
+                    <form id="support-form" style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label d-block mb-2">Issue Type</label>
+                            <div class="form-check">
+                                <input type="radio" id="academic" name="issue" value="academic pressure" class="form-check-input">
+                                <label class="form-check-label" for="academic">Academic Pressure</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="societal" name="issue" value="societal expectations" class="form-check-input">
+                                <label class="form-check-label" for="societal">Societal Expectations</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="social" name="issue" value="social relationships" class="form-check-input">
+                                <label class="form-check-label" for="social">Social Relationships</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="other" name="issue" value="other" class="form-check-input">
+                                <label class="form-check-label" for="other">Other</label>
+                            </div>
+                            <input type="text" class="form-control mt-2" id="otherText" name="otherText" placeholder="Please specify..." style="display: none;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Additional Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Describe your situation..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                    <div id="success-message" style="display: none; margin-top: 2rem; padding: 1.5rem; background: #d4edda; border: 1px solid #c3e6cb; border-radius: 8px; color: #155724;">
+                        <h3>✓ Thank you for reaching out!</h3>
+                        <p>Your message has been received and we will get back to you soon.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <footer style="background-color: #1a1a1a; color: white; padding: 3rem 0 1rem; margin-top: 5rem;" role="contentinfo">
+            <div class="container">
+                <div class="row" style="margin-bottom: 2rem;">
+                    <div class="col-12 col-md-4 mb-4 mb-md-0" style="font-size: clamp(0.9rem, 2vw, 1rem);">
+                        <h5 style="font-size: clamp(1.1rem, 2.5vw, 1.3rem); margin-bottom: 1rem;">About MindBridge</h5>
+                        <p>Providing accessible mental health resources and support to students worldwide.</p>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                        <h5 style="font-size: clamp(1.1rem, 2.5vw, 1.3rem); margin-bottom: 1rem;">Quick Links</h5>
+                        <ul style="list-style: none; padding: 0; font-size: clamp(0.9rem, 2vw, 1rem);">
+                            <li><a href="/" style="color: rgba(255,255,255,0.8); text-decoration: none;">Home</a></li>
+                            <li><a href="/resources" style="color: rgba(255,255,255,0.8); text-decoration: none;">Resources</a></li>
+                            <li><a href="/support" style="color: rgba(255,255,255,0.8); text-decoration: none;">Support</a></li>
+                            <li><a href="/contact" style="color: rgba(255,255,255,0.8); text-decoration: none;">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h5 style="font-size: clamp(1.1rem, 2.5vw, 1.3rem); margin-bottom: 1rem;">Contact</h5>
+                        <p style="font-size: clamp(0.9rem, 2vw, 1rem);">Email: <a href="mailto:pratham.wjr@gmail.com" style="color: rgba(255,255,255,0.8); text-decoration: none;">pratham.wjr@gmail.com</a></p>
+                    </div>
+                </div>
+                <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; text-align: center; color: rgba(255,255,255,0.6); font-size: clamp(0.85rem, 1.5vw, 0.95rem);">
+                    <p>&copy; 2026 MindBridge. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <style>
+            @media (max-width: 576px) {
+                footer {
+                    padding: 2rem 0 1rem !important;
+                    margin-top: 3rem !important;
+                }
+            }
+        </style>
+        <script>
+            const GOOGLE_FORMS_URL = "https://script.google.com/macros/s/AKfycbw2Kbrbkcf9OWVNxsFaCCclisi_488H6SVa3a-VmO_FYgOpsp24vxH0biI7oT4VwYKD5Q/exec";
+
+            
+            const otherText = document.getElementById('otherText');
+            
+            document.querySelectorAll('input[name="issue"]').forEach(radio => {
+                radio.addEventListener('change', () => {
+                    otherText.style.display = radio.value === 'other' ? 'block' : 'none';
+                });
+            });
+
+            document.getElementById('support-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const form = document.getElementById('support-form');
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const issue = document.querySelector('input[name="issue"]:checked').value;
+                const issueDetail = issue === 'other' ? document.getElementById('otherText').value : issue;
+                const message = document.getElementById('message').value;
+                
+                const fullMessage = `Dear Support Team,\n\nThis is a mental health support request from a student.\n\nStudent Name: ${name}\nContact Email: ${email}\nIssue Type: ${issueDetail}\n\nStudent Message:\n${message}\n\nWe would be highly thankful if support and guidance could be provided at this moment.`;
+                
+                try {
+                    const params = new URLSearchParams({
+                        to: "prathamgwjr@gmail.com",
+                        subject: `Mental Health Support Request - ${issueDetail}`,
+                        message: fullMessage
+                    });
+
+                    const response = await fetch(`${GOOGLE_FORMS_URL}?${params.toString()}`, {
+                        method: 'get'
+                    });
+
+                    document.getElementById('support-form').style.display = 'none';
+                    document.getElementById('success-message').style.display = 'block';
+                    document.getElementById('success-message').scrollIntoView({ behavior: 'smooth' });
+
+                    console.log("Success: Form submitted");
+                } catch (err) {
+                    console.error("Error:", err);
+                    alert('There was an error submitting your form. Please try again.');
+                }
+            });
+        </script>
+    </body>
+</html>
